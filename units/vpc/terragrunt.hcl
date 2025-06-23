@@ -3,7 +3,7 @@ include {
 }
 
 terraform {
-  source = "git::"
+  source = "git::https://github.com/GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
 }
 
 inputs = {
