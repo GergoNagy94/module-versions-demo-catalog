@@ -2,12 +2,6 @@ include {
   path = find_in_parent_folders("root.hcl")
 }
 
-include "env" {
-  path           = find_in_parent_folders("env.hcl")
-  expose         = true
-  merge_strategy = "no_merge"
-}
-
 terraform {
   source = "git::https://github.com/GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
 }
