@@ -2,12 +2,8 @@ include "root" {
   path = find_in_parent_folders("root.hcl")
 }
 
-include "env"{
-  vars = find_in_parent_folders("env.hcl")
-}
-
 terraform {
-  source = "git::https://github.com/GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
+  source = "git::git@github.com/GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
 }
 
 inputs = {
