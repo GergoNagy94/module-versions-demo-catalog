@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "git::git@github.com/GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
+  source = "git::git@github.com:GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
 }
 
 inputs = {
@@ -17,6 +17,4 @@ inputs = {
   enable_dns_support     = values.enable_dns_support
   enable_nat_gateway     = values.enable_nat_gateway
   single_nat_gateway     = values.single_nat_gateway
-
-  tags = values.tags
 }

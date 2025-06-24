@@ -3,7 +3,7 @@ include "root" {
 }
 
 terraform {
-  source = "git::git@github.com/GergoNagy94/module-versions-demo-catalog//modules/s3?ref=main"
+  source = "git::git@github.com:GergoNagy94/module-versions-demo-catalog//modules/s3?ref=main"
 }
 
 inputs = {
