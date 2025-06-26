@@ -4,7 +4,7 @@ include "root" {
 }
 
 terraform {
-  source = "git::git@github.com:GergoNagy94/module-versions-demo-catalog//modules/vpc?ref=main"
+  source = "git::git@github.com:terraform-aws-modules/terraform-aws-vpc?ref=v5.2.0"
 }
 
 inputs = {
